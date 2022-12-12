@@ -1,6 +1,0 @@
-apiVersion: v1
-kind: Namespace
-metadata:
-  name: investor-portal-new
-  labels:
-    name: investor-portal-new
