@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: investor-frontend
-  namespace: investort-portal-new
+  namespace: investor-portal-new
   labels:
     app: investor-frontend
 spec:
