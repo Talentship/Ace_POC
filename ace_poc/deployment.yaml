@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: investorfrontend
+  name: investor-portal
   labels:
     app: investor-portal
 spec:
@@ -15,7 +15,7 @@ spec:
         app: investor-portal
     spec:
       containers:
-      - name: investorfrontend
+      - name: investor-portal
         image: 844811022199.dkr.ecr.eu-central-1.amazonaws.com/investor-portal-frontend:ace-003
         imagePullPolicy: Always
         ports:
