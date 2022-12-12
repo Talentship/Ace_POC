@@ -1,22 +1,24 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: nginx-deployment
+  name: investor-frontend
+  namespace: investort-portal
   labels:
-    app: nginx
+    app: investor-frontend
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: nginx
+      app: investor-frontend
   template:
     metadata:
       labels:
-        app: nginx
+        app: investor-frontend
     spec:
       containers:
-      - name: nginx
-        image: nginx:1.14.2
-        ports:
-        - containerPort: 80
+        - name: frowned deployment
+          image: 
+          ports:
+            - name: http
+              containerPort: 80
 
