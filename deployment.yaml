@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: investor-frontend
+  namespace: investort-portal
+  labels:
+    app: investor-frontend
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: investor-frontend
+  template:
+    metadata:
+      labels:
+        app: investor-frontend
+    spec:
+      containers:
+        - name: frowned deployment
+          image: 
+          ports:
+            - name: http
+              containerPort: 80
