@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: investor_frontend
+  name: investorfrontend
   labels:
-    app: investor_frontend
+    app: investorfrontend
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: investor_frontend
+      app: investorfrontend
   template:
     metadata:
       labels:
-        app: investor_frontend
+        app: investorfrontend
     spec:
       containers:
-      - name: investor_frontend
+      - name: investorfrontend
         image: 844811022199.dkr.ecr.eu-central-1.amazonaws.com/investor-portal-frontend:ace-003
         imagePullPolicy: Always
         ports:
