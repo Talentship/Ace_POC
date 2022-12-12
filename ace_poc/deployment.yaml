@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: investor-frontend
-  namespace: investort-portal
+  namespace: investort-portal-new
   labels:
     app: investor-frontend
 spec:
@@ -16,7 +16,7 @@ spec:
         app: investor-frontend
     spec:
       containers:
-        - name: frowned deployment
+        - name: frontned deployment
           image: 844811022199.dkr.ecr.eu-central-1.amazonaws.com/investor-portal-frontend:ace-003 
           ports:
             - name: http
