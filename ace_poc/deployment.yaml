@@ -15,7 +15,7 @@ spec:
         app: nginx
     spec:
       containers:
-      - name: nginx
-        image: nginx:1.14.2
+      - name: investor_frontend
+        image: 844811022199.dkr.ecr.eu-central-1.amazonaws.com/investor-portal-frontend:ace-003
         ports:
         - containerPort: 80
