@@ -3,16 +3,16 @@ kind: Deployment
 metadata:
   name: investorfrontend
   labels:
-    app: investorfrontend
+    app: investor-portal
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: investorfrontend
+      app: investor-portal
   template:
     metadata:
       labels:
-        app: investorfrontend
+        app: investor-portal
     spec:
       containers:
       - name: investorfrontend
