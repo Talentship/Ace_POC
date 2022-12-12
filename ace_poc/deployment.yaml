@@ -1,24 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: investor-frontend
-  namespace: investor-portal-new
+  name: nginx-deployment
   labels:
-    app: investor-frontend
+    app: nginx
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: investor-frontend
+      app: nginx
   template:
     metadata:
       labels:
-        app: investor-frontend
+        app: nginx
     spec:
       containers:
-        - name: frontned deployment
-          image: 844811022199.dkr.ecr.eu-central-1.amazonaws.com/investor-portal-frontend:ace-003 
-          ports:
-            - name: http
-              containerPort: 80
-
+      - name: nginx
+        image: nginx:1.14.2
+        ports:
+        - containerPort: 80
